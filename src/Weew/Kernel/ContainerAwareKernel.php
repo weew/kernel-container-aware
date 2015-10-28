@@ -20,7 +20,7 @@ class ContainerAwareKernel extends BaseKernel {
     }
 
     /**
-     * @return ContainerAwareProviderInvoker
+     * @return IProviderInvoker
      */
     protected function createProviderInvoker() {
         return new ContainerAwareProviderInvoker($this->container);
