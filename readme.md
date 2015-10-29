@@ -7,8 +7,13 @@
 
 ## Table of contents
 
+- [Installation](#installation)
 - [Introduction](#introduction)
 - [Usage](#usage)
+
+## Installation
+
+`composer require weew/php-kernel-container-aware`
 
 ## Introduction
 
