@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This package integrates [weew/php-kernel](https://github.com/weew/php-kernel) with [weew/php-container](https://github.com/weew/php-container) and and allows providers to rely on dependency injection and sharing of data trough the container.
+This package integrates [weew/php-kernel](https://github.com/weew/php-kernel) with [weew/php-container](https://github.com/weew/php-container) and allows providers to rely on dependency injection and sharing of data trough the container.
 
 ## Usage
 
