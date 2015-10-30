@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Weew\Kernel\Mocks;
+namespace Tests\Weew\Kernel\ContainerAware\Mocks;
 
 use Weew\Foundation\IDictionary;
 

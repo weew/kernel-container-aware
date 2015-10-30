@@ -1,11 +1,12 @@
 <?php
 
-namespace Weew\Kernel;
+namespace Weew\Kernel\ContainerAware;
 
 use Weew\Container\IContainer;
+use Weew\Kernel\IProviderInvoker;
 use Weew\Kernel\Kernel as BaseKernel;
 
-class ContainerAwareKernel extends BaseKernel {
+class Kernel extends BaseKernel {
     /**
      * @var IContainer
      */
@@ -23,6 +24,6 @@ class ContainerAwareKernel extends BaseKernel {
      * @return IProviderInvoker
      */
     protected function createProviderInvoker() {
-        return new ContainerAwareProviderInvoker($this->container);
+        return new ProviderInvoker($this->container);
     }
 }

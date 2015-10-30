@@ -1,18 +1,18 @@
 <?php
 
-namespace Tests\Weew\Kernel;
+namespace Tests\Weew\Kernel\ContainerAware;
 
 use PHPUnit_Framework_TestCase;
-use Tests\Weew\Kernel\Mocks\Bar;
-use Tests\Weew\Kernel\Mocks\ComplexProvider;
-use Tests\Weew\Kernel\Mocks\Foo;
+use Tests\Weew\Kernel\ContainerAware\Mocks\Bar;
+use Tests\Weew\Kernel\ContainerAware\Mocks\ComplexProvider;
+use Tests\Weew\Kernel\ContainerAware\Mocks\Foo;
 use Weew\Container\Container;
 use Weew\Foundation\Dictionary;
-use Weew\Kernel\ContainerAwareProviderInvoker;
+use Weew\Kernel\ContainerAware\ProviderInvoker;
 
-class ContainerAwareProviderInvokerTest extends PHPUnit_Framework_TestCase {
+class ProviderInvokerTest extends PHPUnit_Framework_TestCase {
     public function test_invoker_uses_container() {
-        $invoker = new ContainerAwareProviderInvoker(new Container());
+        $invoker = new ProviderInvoker(new Container());
         $shared = new Dictionary();
 
         $shared->set('foo', 'bar');

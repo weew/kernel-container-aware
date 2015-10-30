@@ -1,11 +1,13 @@
 <?php
 
-namespace Weew\Kernel;
+namespace Weew\Kernel\ContainerAware;
 
 use Weew\Container\IContainer;
 use Weew\Foundation\IDictionary;
+use Weew\Kernel\IProviderInvoker;
+use Weew\Kernel\Provider;
 
-class ContainerAwareProviderInvoker implements IProviderInvoker {
+class ProviderInvoker implements IProviderInvoker {
     /**
      * @var IContainer
      */
