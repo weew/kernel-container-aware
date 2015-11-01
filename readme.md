@@ -1,9 +1,11 @@
 # Kernel container integration
 
-[![Build Status](https://travis-ci.org/weew/php-kernel-container-aware.svg?branch=master)](https://travis-ci.org/weew/php-kernel-container-aware)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/weew/php-kernel-container-aware/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/weew/php-kernel-container-aware/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/weew/php-kernel-container-aware/badge.svg?branch=master&service=github)](https://coveralls.io/github/weew/php-kernel-container-aware?branch=master)
-[![License](https://poser.pugx.org/weew/php-kernel-container-aware/license)](https://packagist.org/packages/weew/php-kernel-container-aware)
+[![Build Status](https://img.shields.io/travis/weew/php-kernel-container-aware.svg)](https://travis-ci.org/weew/php-kernel-container-aware)
+[![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-kernel-container-aware.svg)](https://scrutinizer-ci.com/g/weew/php-kernel-container-aware)
+[![Test Coverage](https://img.shields.io/coveralls/weew/php-kernel-container-aware.svg)](https://coveralls.io/github/weew/php-kernel-container-aware)
+[![Dependencies](https://img.shields.io/versioneye/d/php/weew:php-kernel-container-aware.svg)](https://versioneye.com/php/weew:php-kernel-container-aware)
+[![Version](https://img.shields.io/packagist/v/weew/php-kernel-container-aware.svg)](https://packagist.org/packages/weew/php-kernel-container-aware)
+[![Licence](https://img.shields.io/packagist/l/weew/php-kernel-container-aware.svg)](https://packagist.org/packages/weew/php-kernel-container-aware)
 
 ## Table of contents
 
