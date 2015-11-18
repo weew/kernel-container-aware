@@ -3,7 +3,7 @@
 namespace Weew\Kernel\ContainerAware;
 
 use Weew\Container\IContainer;
-use Weew\Foundation\IDictionary;
+use Weew\Collections\IDictionary;
 use Weew\Kernel\IProviderInvoker;
 use Weew\Kernel\Provider;
 

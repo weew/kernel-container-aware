@@ -7,7 +7,7 @@ use Tests\Weew\Kernel\ContainerAware\Mocks\Bar;
 use Tests\Weew\Kernel\ContainerAware\Mocks\ComplexProvider;
 use Tests\Weew\Kernel\ContainerAware\Mocks\Foo;
 use Weew\Container\Container;
-use Weew\Foundation\Dictionary;
+use Weew\Collections\Dictionary;
 use Weew\Kernel\ContainerAware\ProviderInvoker;
 
 class ProviderInvokerTest extends PHPUnit_Framework_TestCase {

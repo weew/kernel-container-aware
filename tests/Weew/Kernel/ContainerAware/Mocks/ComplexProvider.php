@@ -2,7 +2,7 @@
 
 namespace Tests\Weew\Kernel\ContainerAware\Mocks;
 
-use Weew\Foundation\IDictionary;
+use Weew\Collections\IDictionary;
 
 class ComplexProvider {
     public $foo;
