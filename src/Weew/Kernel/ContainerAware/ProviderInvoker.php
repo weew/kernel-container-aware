@@ -24,10 +24,13 @@ class ProviderInvoker implements IProviderInvoker {
      * @param $providerClass
      * @param IDictionary $shared
      *
-     * @return Provider
+     * @return mixed
      */
     public function create($providerClass, IDictionary $shared) {
-        return $this->container->get($providerClass, ['shared' => $shared]);
+        $provider = $this->container->get($providerClass, ['shared' => $shared]);
+        $this->container->set($providerClass, $provider);
+
+        return $provider;
     }
 
     /**

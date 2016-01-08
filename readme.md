@@ -28,3 +28,5 @@ Simply create an instance of container aware `Kernel` and pass in an instance of
 ```php
 $kernel = new Weew\Kernel\ContainerAware\Kernel(new Container());
 ```
+
+Note: Kernel will automatically share instances of providers in the container.

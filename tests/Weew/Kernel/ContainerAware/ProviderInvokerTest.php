@@ -35,4 +35,13 @@ class ProviderInvokerTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue($provider->shutdown instanceof Bar);
         $this->assertEquals('yolo', $provider->foo);
     }
+
+    public function test_invoker_puts_provider_instance_into_the_container() {
+        $container = new Container();
+        $invoker = new ProviderInvoker($container);
+        $provider = $invoker->create(ComplexProvider::class, new Dictionary());
+
+        $this->assertTrue($container->has(ComplexProvider::class));
+        $this->assertTrue($provider === $container->get(ComplexProvider::class));
+    }
 }
