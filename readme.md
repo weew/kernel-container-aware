@@ -23,7 +23,7 @@ This package integrates [weew/php-kernel](https://github.com/weew/php-kernel) wi
 
 ## Usage
 
-Simply create an instance of container aware `Kernel` and pass in an instance of `IContainer`.
+To create a container aware `Kernel` simply pass in an instance of `IContainer`.
 
 ```php
 $kernel = new Weew\Kernel\ContainerAware\Kernel(new Container());
