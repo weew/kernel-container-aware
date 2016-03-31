@@ -19,8 +19,8 @@
         }
     },
     "require": {
-        "weew/php-kernel": "^1.0.0",
-        "weew/php-container": "^1.0.0"
+        "weew/php-kernel": "^v2.0",
+        "weew/php-container": "^1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.7",

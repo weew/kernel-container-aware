@@ -15,25 +15,30 @@ class ProviderInvokerTest extends PHPUnit_Framework_TestCase {
         $invoker = new ProviderInvoker(new Container());
         $shared = new Dictionary();
 
-        $shared->set('foo', 'bar');
+        $shared->set('status', 'created');
         $provider = $invoker->create(ComplexProvider::class, $shared);
         $this->assertTrue($provider->create instanceof Foo);
-        $this->assertEquals('bar', $provider->foo);
+        $this->assertEquals('created', $provider->status);
 
-        $shared->set('foo', 'foo');
+        $shared->set('status', 'configured');
+        $invoker->configure($provider, $shared);
+        $this->assertTrue($provider->configure instanceof Bar);
+        $this->assertEquals('configured', $provider->status);
+
+        $shared->set('status', 'initialized');
         $invoker->initialize($provider, $shared);
         $this->assertTrue($provider->initialize instanceof Bar);
-        $this->assertEquals('foo', $provider->foo);
+        $this->assertEquals('initialized', $provider->status);
 
-        $shared->set('foo', 'baz');
+        $shared->set('status', 'booted');
         $invoker->boot($provider, $shared);
         $this->assertTrue($provider->boot instanceof Bar);
-        $this->assertEquals('baz', $provider->foo);
+        $this->assertEquals('booted', $provider->status);
 
-        $shared->set('foo', 'yolo');
+        $shared->set('status', 'shutdown');
         $invoker->shutdown($provider, $shared);
         $this->assertTrue($provider->shutdown instanceof Bar);
-        $this->assertEquals('yolo', $provider->foo);
+        $this->assertEquals('shutdown', $provider->status);
     }
 
     public function test_invoker_puts_provider_instance_into_the_container() {

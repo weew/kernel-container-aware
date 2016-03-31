@@ -37,6 +37,14 @@ class ProviderInvoker implements IProviderInvoker {
      * @param object $provider
      * @param IDictionary $shared
      */
+    public function configure($provider, IDictionary $shared) {
+        $this->container->callMethod($provider, 'configure', ['shared' => $shared]);
+    }
+
+    /**
+     * @param object $provider
+     * @param IDictionary $shared
+     */
     public function initialize($provider, IDictionary $shared) {
         $this->container->callMethod($provider, 'initialize', ['shared' => $shared]);
     }
