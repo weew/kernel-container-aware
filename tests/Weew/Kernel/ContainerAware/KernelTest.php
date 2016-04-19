@@ -14,4 +14,11 @@ class KernelTest extends PHPUnit_Framework_TestCase {
             $kernel->getProviderInvoker() instanceof ProviderInvoker
         );
     }
+
+    public function test_get_and_set_kernel() {
+        $kernel = new Kernel(new Container());
+        $container = new Container();
+        $kernel->setContainer($container);
+        $this->assertTrue($kernel->getContainer() === $container);
+    }
 }
