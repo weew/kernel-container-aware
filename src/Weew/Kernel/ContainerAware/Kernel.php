@@ -16,8 +16,8 @@ class Kernel extends BaseKernel {
      * @param IContainer $container
      */
     public function __construct(IContainer $container) {
-        $this->setContainer($container);
         parent::__construct();
+        $this->setContainer($container);
     }
 
     /**
@@ -32,12 +32,6 @@ class Kernel extends BaseKernel {
      */
     public function setContainer(IContainer $container) {
         $this->container = $container;
-    }
-
-    /**
-     * @return IProviderInvoker
-     */
-    protected function createProviderInvoker() {
-        return new ProviderInvoker($this->container);
+        $this->setProviderInvoker(new ProviderInvoker($this->container));
     }
 }
