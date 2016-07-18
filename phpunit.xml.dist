@@ -10,7 +10,7 @@
          syntaxCheck="false"
          bootstrap="tests/bootstrap.php">
     <testsuites>
-        <testsuite name="php-kernel-container-aware">
+        <testsuite name="kernel-container-aware">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

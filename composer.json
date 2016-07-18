@@ -1,6 +1,6 @@
 {
-    "name": "weew/php-kernel-container-aware",
-    "description": "Integration between weew/php-kernel and weew/php-container.",
+    "name": "weew/kernel-container-aware",
+    "description": "Integration between weew/kernel and weew/container.",
     "license": "MIT",
     "authors": [
         {
@@ -19,8 +19,8 @@
         }
     },
     "require": {
-        "weew/php-kernel": "^2.1",
-        "weew/php-container": "^1.2"
+        "weew/kernel": "^2.1",
+        "weew/container": "^1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.7",
